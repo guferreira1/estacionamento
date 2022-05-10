@@ -17,14 +17,14 @@
             var _a, _b;
             const row = document.createElement("tr");
             row.innerHTML = `
-                <td>${veiculo.placa}</td>
+                <td>${veiculo.nome}</td>
                 <td>${veiculo.placa}</td>
                 <td>${veiculo.entrada}</td>
                 <td>
                     <button class="delete" data-placa="${veiculo.placa}">X</button>
                 </td>
             `;
-            (_a = row.querySelector("delete")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
+            (_a = row.querySelector(".delete")) === null || _a === void 0 ? void 0 : _a.addEventListener("click", function () {
                 remover(this.dataset.placa);
             });
             (_b = $("#patio")) === null || _b === void 0 ? void 0 : _b.appendChild(row);

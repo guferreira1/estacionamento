@@ -27,7 +27,7 @@ interface Veiculo{
             const row = document.createElement("tr");
 
             row.innerHTML = `
-                <td>${veiculo.placa}</td>
+                <td>${veiculo.nome}</td>
                 <td>${veiculo.placa}</td>
                 <td>${veiculo.entrada}</td>
                 <td>
@@ -35,7 +35,7 @@ interface Veiculo{
                 </td>
             `;
 
-            row.querySelector("delete")?.addEventListener("click", function(){
+            row.querySelector(".delete")?.addEventListener("click", function(){
                 remover(this.dataset.placa)
             });
 
